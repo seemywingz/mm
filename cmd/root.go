@@ -11,8 +11,10 @@ import (
 )
 
 var (
-	min,
-	max int
+	xmin,
+	xmax,
+	ymin,
+	ymax int
 	loop bool
 )
 
@@ -42,6 +44,8 @@ func Execute() {
 
 func init() {
 	rootCmd.Flags().BoolVar(&loop, "loop", false, "Toggle Automation Looping")
-	rootCmd.Flags().IntVar(&min, "min", 9, "Minimum Screen Address")
-	rootCmd.Flags().IntVar(&max, "max", 999, "Maximum Screen Address")
+	rootCmd.Flags().IntVar(&xmin, "xmin", 9, "Minimum Horizontal Screen Address")
+	rootCmd.Flags().IntVar(&xmax, "xmax", 999, "Maximum Horizontal Screen Address")
+	rootCmd.Flags().IntVar(&ymin, "ymin", 9, "Minimum Vertical Screen Address")
+	rootCmd.Flags().IntVar(&ymax, "ymax", 999, "Maximum Vertical Screen Address")
 }

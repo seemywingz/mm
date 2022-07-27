@@ -19,8 +19,8 @@ func randRC() {
 
 func randCoords() string {
 	rand.Seed(time.Now().UnixNano())
-	x := rand.Intn(max-min) + min
-	y := rand.Intn(max-min) + min
+	x := rand.Intn(xmax-xmin) + xmin
+	y := rand.Intn(ymax-ymin) + ymin
 	return strconv.Itoa(x) + "," + strconv.Itoa(y)
 }
 
