@@ -1,5 +1,5 @@
 /*
-Copyright © 2022 NAME HERE <EMAIL ADDRESS>
+Copyright © 2022 Kevin Jayne <kevin.jayne@icloud.com>
 
 */
 package cmd
@@ -21,7 +21,7 @@ var (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "mm",
-	Short: "CLI Wrapper and orcestrator for CLIClick",
+	Short: "CLI Wrapper and orchestrator for CLIClick",
 	Long:  `A CLI wrapper for cliclick to automate mouse movements and clicks`,
 	Run: func(cmd *cobra.Command, args []string) {
 		randRC()
