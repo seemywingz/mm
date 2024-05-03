@@ -1,2 +1,2 @@
-# mm
-Mouse Move CLI Wrapper for `cliclick`
+# Mouse Move
+A simple Go Powered Utility for Moving the Mouse
