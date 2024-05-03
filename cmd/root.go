@@ -25,8 +25,8 @@ var (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "mm",
-	Short: "CLI Wrapper and orchestrator for CLIClick",
-	Long:  `A CLI wrapper for cliclick to automate mouse movements and clicks`,
+	Short: "A CLI Mouse Move and Click Automation Tool",
+	Long:  `Automate Mouse Movements and Clicks on your Desktop`,
 	Run: func(cmd *cobra.Command, args []string) {
 		getScreenSize()
 		randRClick()
